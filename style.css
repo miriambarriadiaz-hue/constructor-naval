@@ -57,7 +57,7 @@ nav a:hover {
 .hero {
   position: relative;
   height: 530px;
-  background-image: url("assets/imagen 3.jpg");
+  background-image: url("assets/Imagen 3.jpg");
   background-size: 105%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -386,3 +386,4 @@ button {
   from { transform: scale(0.8); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+
