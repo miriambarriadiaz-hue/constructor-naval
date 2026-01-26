@@ -405,15 +405,19 @@ button {
 
 .mapa {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;   /* 👈 centra horizontal */
 }
 
 .mapa iframe {
-  width: 100%;
+  width: 80%;                /* 👈 tamaño centrado */
+  max-width: 800px;          /* 👈 no se pasa de ancho */
   height: 350px;
   border: 0;
   border-radius: 15px;
   box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
+
 
 
 
