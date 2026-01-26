@@ -99,30 +99,44 @@ Hoy, Constructor Naval Daniel Barría se ha consolidado como un referente en la 
     </div>
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form action="mailto:danielconstructornaval@gmail.com?subject=Consulta%20Constructor%20Naval"
-      method="POST"
-      enctype="text/plain">
+ <!-- CONTACTO -->
+<section id="contacto">
+  <h2>Contacto</h2>
 
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+  <form action="mailto:danielconstructornaval@gmail.com?subject=Consulta%20Constructor%20Naval"
+        method="POST"
+        enctype="text/plain">
 
-  <label for="email">Correo electrónico:</label>
-  <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-  <label for="mensaje">Mensaje:</label>
-  <textarea id="mensaje" name="mensaje" rows="5"
-            placeholder="Escribe tu mensaje aquí..." required></textarea>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
 
-  <button type="submit">Enviar mensaje</button>
-</form>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5"
+      placeholder="Escribe tu mensaje aquí..." required></textarea>
 
+    <button type="submit">Enviar mensaje</button>
+  </form>
 
-    <p id="estadoEnvio">
-📧 Al enviar el mensaje se abrirá tu correo para contactarnos directamente.
-</p>
+  <p id="estadoEnvio">
+    📧 Al enviar el mensaje se abrirá tu correo para contactarnos directamente.
+  </p>
+
+  <!-- MAPA -->
+  <h3>📍 Nuestra ubicación</h3>
+
+  <div class="mapa">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!4v1769437809781!6m8!1m7!1sjhnBKQ-Vblzla86hhTmjwg!2m2!1d-42.33499450588454!2d-73.50407243793713!3f27.793625449680995!4f0.32438997697582295!5f0.7820865974627469"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+</section>
 
 
   <!-- PIE DE PÁGINA -->
@@ -161,6 +175,7 @@ Hoy, Constructor Naval Daniel Barría se ha consolidado como un referente en la 
 
 </body>
 </html>
+
 
 
 
