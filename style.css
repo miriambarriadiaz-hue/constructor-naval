@@ -255,23 +255,37 @@ button {
 #btnArriba {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 90px;
+  bottom: 25px;
+  right: 95px;
   z-index: 99;
-  font-size: 20px;
-  border: none;
-  outline: none;
-  background-color: #b88b4a;
+
+  width: 46px;
+  height: 46px;
+
+  background-color: #0b3d91;   /* azul institucional */
   color: white;
-  cursor: pointer;
-  padding: 10px 15px;
+
+  border: 2px solid #b88b4a;   /* dorado fino */
   border-radius: 50%;
-  transition: 0.3s;
+
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
 }
 
 #btnArriba:hover {
-  background-color: #0b3d91;
+  background-color: #b88b4a;
+  color: #0b3d91;
+  transform: translateY(-3px);
 }
+
 
 /* FORMULARIO DE CONTACTO */
 #contacto form {
@@ -423,6 +437,7 @@ button {
   border-radius: 15px;
   box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
+
 
 
 
