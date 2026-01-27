@@ -164,7 +164,7 @@ h2 {
 
 .galeria img {
   width: 100%;
-  aspect-ratio: 1 / 1;   /* todas del mismo tamaño */
+  aspect-ratio: 4 / 3;   /* todas del mismo tamaño */
   height: auto;
   object-fit: cover;     /* recorte elegante y parejo */
   border-radius: 14px;
@@ -531,6 +531,7 @@ button {
 body.chat-open .whatsapp-float{
   display: none !important;
 }
+
 
 
 
