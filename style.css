@@ -474,5 +474,50 @@ button {
   }
 }
 
+/* ===== AJUSTE FINAL BOTONES FLOTANTES ===== */
+
+/* Botón Chat */
+#chat-toggle{
+  position: fixed !important;
+  right: 25px !important;
+  bottom: 95px !important;   /* sube el botón */
+  width: 48px !important;    /* más pequeño */
+  height: 48px !important;
+  font-size: 20px !important;
+  z-index: 99999 !important;
+}
+
+/* Caja del chat */
+#chat-container{
+  position: fixed !important;
+  right: 25px !important;
+  bottom: 155px !important;  /* sube la caja */
+  z-index: 99999 !important;
+}
+
+/* WhatsApp */
+.whatsapp-float{
+  right: 20px !important;
+  bottom: 155px !important;
+  width: 52px !important;
+  height: 52px !important;
+  z-index: 99998 !important;
+}
+
+/* Botón subir */
+#btnArriba{
+  right: 90px !important;
+  bottom: 95px !important;
+  width: 40px !important;
+  height: 40px !important;
+  z-index: 99997 !important;
+}
+
+/* Espacio extra para que no tapen el footer */
+footer.footer-legal{
+  padding-bottom: 170px !important;
+}
+
+
 
 
