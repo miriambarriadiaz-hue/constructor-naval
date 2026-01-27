@@ -24,6 +24,7 @@ header {
   transform: scale(1.05);  /* efecto suave al pasar el mouse */
 }
 
+
 /* MENÚ */
 nav {
   background-color: #b88b4a;
@@ -175,7 +176,7 @@ h2 {
   transform: scale(1.03);
 }
 
-/* PIE DE PÁGINA (genérico, si lo usas en otras páginas) */
+/* PIE DE PÁGINA */
 footer {
   text-align: center;
   background-color: #0b3d91;
@@ -284,6 +285,7 @@ button {
   color: #0b3d91;
   transform: translateY(-3px);
 }
+
 
 /* FORMULARIO DE CONTACTO */
 #contacto form {
@@ -436,14 +438,10 @@ button {
   box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
 
-/* ===================== */
-/* FOOTER DEL SITIO (TUYO) */
-/* ===================== */
-
 .footer-legal {
   background-color: #0b3d91;
   color: white;
-  padding: 18px 25px 140px; /* ✅ ÚNICO AJUSTE: espacio abajo para que NO tapen los botones */
+  padding: 18px 25px;
   font-size: 0.95rem;
 }
 
