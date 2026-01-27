@@ -441,7 +441,7 @@ button {
 .footer-legal {
   background-color: #0b3d91;
   color: white;
-  padding: 18px 25px;
+  padding: 12px 25px 120px; /* arriba / lados / abajo */
   font-size: 0.95rem;
 }
 
@@ -474,9 +474,6 @@ button {
   }
 }
 
-.footer-legal{
-  padding: 12px 25px 120px; /* arriba/derecha-izquierda/abajo */
-}
 
 
 
