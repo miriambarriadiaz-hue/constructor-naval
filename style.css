@@ -453,18 +453,22 @@ button {
 
 .footer-contenido {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;        /* centra todo */
   align-items: center;
+  gap: 25px;                      /* separación elegante */
   border-top: 1px solid rgba(255,255,255,0.25);
   padding-top: 10px;
   flex-wrap: wrap;
-  gap: 10px;
+  text-align: center;
+  font-size: 0.85rem;             /* 👈 letras más pequeñas */
 }
 
 .footer-izq,
 .footer-der {
-  font-size: 0.9rem;
+  font-size: 0.85rem;             /* 👈 asegura tamaño parejo */
+  opacity: 0.9;                   /* más fino visualmente */
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -517,6 +521,7 @@ button {
 body.chat-open .whatsapp-float{
   display: none !important;
 }
+
 
 
 
