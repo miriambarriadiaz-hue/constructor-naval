@@ -438,6 +438,42 @@ button {
   box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
 
+.footer-legal {
+  background-color: #0b3d91;
+  color: white;
+  padding: 18px 25px;
+  font-size: 0.95rem;
+}
+
+.footer-contacto {
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 0.95;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  padding-top: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-izq,
+.footer-der {
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 
 
 
