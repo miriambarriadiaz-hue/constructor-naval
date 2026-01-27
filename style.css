@@ -188,7 +188,7 @@ footer {
 /* CHAT */
 #chat-toggle {
   position: fixed;
-  bottom: 25px;
+  bottom: 75px;
   right: 25px;
   background-color: #0b3d91;
   color: white;
@@ -473,5 +473,6 @@ button {
     text-align: center;
   }
 }
+
 
 
