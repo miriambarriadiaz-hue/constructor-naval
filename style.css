@@ -1,3 +1,7 @@
+/* ============================= */
+/* CONFIGURACIÓN GENERAL */
+/* ============================= */
+
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -5,7 +9,10 @@ body {
   color: #222;
 }
 
+/* ============================= */
 /* ENCABEZADO */
+/* ============================= */
+
 header {
   background-color: #0b3d91;
   color: white;
@@ -14,18 +21,20 @@ header {
 }
 
 .logo {
-  width: 300px;            /* antes 100px — ahora más grande */
+  width: 300px;
   border-radius: 50%;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
 
 .logo:hover {
-  transform: scale(1.05);  /* efecto suave al pasar el mouse */
+  transform: scale(1.05);
 }
 
-
+/* ============================= */
 /* MENÚ */
+/* ============================= */
+
 nav {
   background-color: #b88b4a;
   text-align: center;
@@ -36,22 +45,16 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 22px;              /* separación entre botones */
+  gap: 22px;
 }
 
-nav ul li {
-  margin: 0;              /* ya no se usa margin aquí */
-}
-
-nav a{
+nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  display: inline-block;
   padding: 6px 10px;
 }
 
@@ -59,7 +62,10 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* HERO PRINCIPAL */
+/* ============================= */
+/* HERO */
+/* ============================= */
+
 .hero {
   position: relative;
   height: 530px;
@@ -75,7 +81,6 @@ nav a:hover {
   margin: 0 10px;
 }
 
-/* Capa oscura */
 .hero-overlay {
   background-color: rgba(0, 0, 0, 0.45);
   width: 100%;
@@ -86,12 +91,10 @@ nav a:hover {
   justify-content: center;
 }
 
-/* Texto sobre la imagen */
 .hero-texto {
   color: white;
   text-align: center;
   padding: 40px;
-  border-radius: 15px;
   max-width: 700px;
   animation: fadeIn 2s ease-in;
 }
@@ -103,21 +106,15 @@ nav a:hover {
   border: 3px solid #b88b4a;
 }
 
-/* TÍTULO PRINCIPAL */
 .hero-texto h2 {
   color: #cdd9f8;
   font-size: 1.9rem;
-  font-weight: 700;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
   margin-bottom: 15px;
 }
 
-/* PÁRRAFO SECUNDARIO */
 .hero-texto p {
-  color: #ffffff;
   font-size: 1.2rem;
   line-height: 1.6;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 @keyframes fadeIn {
@@ -125,7 +122,10 @@ nav a:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* ============================= */
 /* SECCIONES */
+/* ============================= */
+
 section {
   padding: 40px 60px;
 }
@@ -134,32 +134,16 @@ h2 {
   border-left: 5px solid #b88b4a;
   padding-left: 10px;
   color: #0b3d91;
-  margin-bottom: 20px;
 }
 
-/* SERVICIOS */
-.servicios-lista {
-  list-style: none;
-  padding: 0;
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-.servicios-lista li {
-  background-color: #f2e8d5;
-  border-left: 5px solid #b88b4a;
-  margin-bottom: 10px;
-  padding: 10px 15px;
-  border-radius: 6px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-}
-
+/* ============================= */
 /* GALERÍA */
+/* ============================= */
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  margin-top: 20px;
 }
 
 .galeria img {
@@ -167,288 +151,33 @@ h2 {
   height: 220px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
 }
 
 .galeria img:hover {
   transform: scale(1.03);
 }
 
-/* PIE DE PÁGINA */
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
 footer {
+  background-color: #0b3d91;
+  color: white;
   text-align: center;
-  background-color: #0b3d91;
-  color: white;
-  padding: 15px;
   margin-top: 30px;
-}
-
-/* CHAT */
-#chat-toggle {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background-color: #0b3d91;
-  color: white;
-  font-size: 24px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-#chat-container {
-  position: fixed;
-  bottom: 100px;
-  right: 25px;
-  width: 320px;
-  background: #fff9f3;
-  border: 2px solid #b88b4a;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  font-family: Arial, sans-serif;
-  z-index: 100;
-  display: none;
-}
-
-#chat-container.active {
-  display: block;
-}
-
-#chat-box {
-  display: flex;
-  flex-direction: column;
-  height: 400px;
-}
-
-#messages {
-  flex: 1;
-  padding: 10px;
-  overflow-y: auto;
-  font-size: 14px;
-}
-
-#user-input {
-  border: none;
-  padding: 10px;
-  border-top: 1px solid #ccc;
-  outline: none;
-  width: calc(100% - 70px);
-}
-
-button {
-  background-color: #0b3d91;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 0 0 8px 8px;
-  cursor: pointer;
-}
-
-/* BOTÓN VOLVER ARRIBA */
-#btnArriba {
-  display: none;
-  position: fixed;
-  bottom: 25px;
-  right: 95px;
-  z-index: 99;
-
-  width: 46px;
-  height: 46px;
-
-  background-color: #0b3d91;   /* azul institucional */
-  color: white;
-
-  border: 2px solid #b88b4a;   /* dorado fino */
-  border-radius: 10%;
-
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-  transition: all 0.3s ease;
-}
-
-#btnArriba:hover {
-  background-color: #b88b4a;
-  color: #0b3d91;
-  transform: translateY(-3px);
-}
-
-
-/* FORMULARIO DE CONTACTO */
-#contacto form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#contacto input,
-#contacto textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #b88b4a;
-  border-radius: 5px;
-  font-size: 1rem;
-  background-color: #f7efdf;
-}
-
-#contacto button {
-  margin-top: 10px;
-  background-color: #0b3d91;
-  color: white;
-  font-weight: bold;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-#contacto button:hover {
-  background-color: #b88b4a;
-}
-
-#estadoEnvio {
-  margin-top: 10px;
-  font-size: 1rem;
-  font-style: italic;
-  color: #555;
-  text-align: center;
-  transition: all 0.4s ease;
-}
-
-/* ZOOM DE GALERÍA CON FLECHAS Y AJUSTE COMPLETO */
-#modalZoom {
-  display: none;
-  position: fixed;
-  z-index: 200;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-contenido {
-  position: relative;
-  max-width: 95%;
-  max-height: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: zoomIn 0.4s ease;
-}
-
-#imagenZoom {
-  max-width: 100%;
-  max-height: 90vh;
-  border-radius: 10px;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
-  object-fit: contain;
-}
-
-#cerrarZoom {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  color: white;
-  font-size: 32px;
-  font-weight: bold;
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 50%;
-  padding: 5px 12px;
-  transition: background 0.3s;
-}
-
-#cerrarZoom:hover {
-  background: #b88b4a;
-}
-
-/* Flechas */
-.flecha {
-  position: absolute;
-  top: 50%;
-  color: white;
-  font-size: 45px;
-  font-weight: bold;
-  cursor: pointer;
-  user-select: none;
-  padding: 10px 18px;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-  transition: background 0.3s;
-  transform: translateY(-50%);
-}
-
-#anterior { left: 20px; }
-#siguiente { right: 20px; }
-
-.flecha:hover {
-  background: #b88b4a;
-}
-
-@keyframes zoomIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-
-.whatsapp-float {
-  position: fixed;
-  right: 20px;
-  bottom: 90px;
-  width: 60px;
-  height: 60px;
-  z-index: 9999;
-}
-
-.whatsapp-float img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
-}
-
-.mapa {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;   /* 👈 centra horizontal */
-}
-
-.mapa iframe {
-  width: 80%;                /* 👈 tamaño centrado */
-  max-width: 800px;          /* 👈 no se pasa de ancho */
-  height: 350px;
-  border: 0;
-  border-radius: 15px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+  padding-bottom: 140px; /* 🔑 espacio para botones flotantes */
 }
 
 .footer-legal {
-  background-color: #0b3d91;
-  color: white;
-  padding: 12px 25px 120px; /* arriba / lados / abajo */
+  padding: 12px 25px 120px;
   font-size: 0.95rem;
 }
 
 .footer-contacto {
-  text-align: center;
   margin-bottom: 10px;
-  opacity: 0.95;
 }
 
 .footer-contenido {
@@ -458,7 +187,6 @@ button {
   border-top: 1px solid rgba(255,255,255,0.25);
   padding-top: 10px;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
 .footer-izq,
@@ -466,8 +194,68 @@ button {
   font-size: 0.9rem;
 }
 
-/* Responsive */
+/* ============================= */
+/* BOTONES FLOTANTES */
+/* ============================= */
+
+#chat-toggle {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #0b3d91;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 9999;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#btnArriba {
+  position: fixed;
+  bottom: 40px;
+  right: 95px;
+  width: 46px;
+  height: 46px;
+  background-color: #0b3d91;
+  color: white;
+  border: 2px solid #b88b4a;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
 @media (max-width: 768px) {
+  section {
+    padding: 30px 20px;
+  }
+
   .footer-contenido {
     flex-direction: column;
     text-align: center;
