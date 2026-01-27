@@ -474,49 +474,7 @@ button {
   }
 }
 
-/* ===== FLOTANTES: FIJOS ABAJO + NO ENCIMA DEL CHAT ===== */
 
-/* WhatsApp fijo abajo derecha */
-.whatsapp-float{
-  position: fixed !important;
-  right: 20px !important;
-  left: auto !important;
-  bottom: 20px !important;    /* queda abajo */
-  width: 52px !important;
-  height: 52px !important;
-  z-index: 9998 !important;
-}
-
-/* Botón chat fijo abajo (arriba de WhatsApp un poquito) */
-#chat-toggle{
-  position: fixed !important;
-  right: 20px !important;
-  bottom: 85px !important;    /* fijo, NO sube */
-  width: 52px !important;
-  height: 52px !important;
-  z-index: 9999 !important;
-}
-
-/* Caja del chat: fija abajo (encima del botón chat) */
-#chat-container{
-  position: fixed !important;
-  right: 20px !important;
-  bottom: 145px !important;   /* fijo, NO sube */
-  z-index: 10000 !important;
-}
-
-/* Solo la flecha sube (para no tapar footer) */
-#btnArriba{
-  position: fixed !important;
-  right: 90px !important;
-  bottom: 85px !important;    /* la dejas “más arriba” */
-  z-index: 9999 !important;
-}
-
-/* Cuando el chat está abierto, ocultar WhatsApp (para que no quede encima) */
-body.chat-open .whatsapp-float{
-  display: none !important;
-}
 
 
 
